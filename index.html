@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexOne - Datos Históricos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>IndexOne</h1>
+    <p>Acceso a datos históricos</p>
+    <script>
+        fetch('datos_commodities.json')
+            .then(response => response.json())
+            .then(datosCommodities => console.log(datosCommodities));
+    </script>
+</body>
+</html>
